@@ -28,12 +28,14 @@ In order to achieve the data freshness in our ETL pipelines, a key challenge is 
 
   - Customers might want to know how a restaurant has fared over a specific time period. It is not uncommon for restaurant quality to take a sharp turn for better or worse due to various reasons(management change, cost cutting measures, stress on profits etc). These changes will not be reflected over average review ratings provided by various review sites.
   <br>
+
 ### Review count per cuisine per site
-<br>
+  <br>
+
 <img src="images/review_counts_per_site.gif" width="800" height="350" />
 
   -We cannot simply trust the average review value alone. Different review sites have different counts of reviews for a particular restaurant. It is helpful to see the distribution of review counts per cuisine per review_site. Outliers in ratings collected from different review sites could indicate potential fraud.
-<br>
+ <br>
 
 ## Design
 
