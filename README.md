@@ -34,7 +34,7 @@ In order to achieve the data freshness in our ETL pipelines, a key challenge is 
 
 <img src="images/review_counts_per_site.gif" width="800" height="350" />
 
-  -We cannot simply trust the average review value alone. Different review sites have different counts of reviews for a particular restaurant. It is helpful to see the distribution of review counts per cuisine per review_site. Outliers in ratings collected from different review sites could indicate potential fraud.
+  - We cannot simply trust the average review value alone. Different review sites have different counts of reviews for a particular restaurant. It is helpful to see the distribution of review counts per cuisine per review_site. Outliers in ratings collected from different review sites could indicate potential fraud.
  <br>
 
 ## Design
@@ -49,7 +49,7 @@ In order to achieve the data freshness in our ETL pipelines, a key challenge is 
 - Data post extraction/transformation is exposed for interactive analytics on [Aws Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)(Presto based distributed query engine). 
 - Athena service is integrated with [Apache Superset](https://superset.apache.org/docs/intro/) to provide further data exploration and visualization capabilities.
 
-- The data visualized using Apache Superset  is hosted on [DigitalOcean droplet](https://docs.digitalocean.com/products/droplets/) as a cost-effective method to create and share the visulization.
+- The data visualized using Apache Superset  is hosted on [DigitalOcean droplet](https://docs.digitalocean.com/products/droplets/) as a cost-effective method to create and share the visualization.
 
 
 
