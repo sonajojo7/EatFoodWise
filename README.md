@@ -61,7 +61,7 @@ In order to achieve the data freshness in our ETL pipelines, a key challenge is 
 ## Setup
 <br>
 
-![Setup](./images/Setup.svg)
+![Read and Write Paths](./images/Setup.svg)
 
 The raw data for health_grade, google_reviews and yelp_reviews were generated locally and were inserted into AWS S3's input bucket. The raw data of the reviews were designed in such a way that the review corresponding to a particular review_id could be updated in cases where reviewer has a change of mind and updated the review to a new value. The design is based on an incremental data processing model. New data is uploaded on a regular interval in the raw data bucket. When new data is added, a trigger is initiated causing Glue job run and therby process the data. The trigger could be scheduled trigger, conditional trigger or on-demand trigger. In all cases, the glue job runs and data is processed.
 
