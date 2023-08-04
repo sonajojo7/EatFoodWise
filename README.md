@@ -8,12 +8,7 @@
 - Not all metrics are available from all the data sources. For example, restaurant hygiene related data points are gathered from data published by city health departments. Note: Extraction of data, not available via apis, can be done via web scraping etc. Work pertaining to this is considered out of scope of this project.
 
 
-## Model
-
-The data lake consists of foundational fact, dimension, and aggregate tables developed using dimensional data modeling techniques that can be accessed by engineers and data scientists in a self-serve manner to power data engineering. The ETL (extract, transform, load) pipelines that compute these tables are thus mission-critical.Our aim is to have data freshness and give engineering efforts that process data as quickly as possible to keep it up to date.
-In order to achieve the data freshness in our ETL pipelines, a key challenge is incrementally updating these modeled tables rather than recomputing all the data with each new ETL run. This is also necessary to operate these pipelines cost-effectively.   In this project, we aim to achieve an incremental data processing model which is efficient and cost-effective at the same time.
-
-## Insights 
+## Business Insights 
 
 ### How are restaurant reviews correlated to health grade
 <br>
